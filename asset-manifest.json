@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/final-frontend-main/static/css/main.b7da38e2.css",
+    "main.js": "/final-frontend-main/static/js/main.255d37db.js",
+    "static/js/787.b8378ba7.chunk.js": "/final-frontend-main/static/js/787.b8378ba7.chunk.js",
+    "static/media/hunter-campus.jpg": "/final-frontend-main/static/media/hunter-campus.1e5d3207e575ab0bc91e.jpg",
+    "index.html": "/final-frontend-main/index.html",
+    "main.b7da38e2.css.map": "/final-frontend-main/static/css/main.b7da38e2.css.map",
+    "main.255d37db.js.map": "/final-frontend-main/static/js/main.255d37db.js.map",
+    "787.b8378ba7.chunk.js.map": "/final-frontend-main/static/js/787.b8378ba7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7da38e2.css",
+    "static/js/main.255d37db.js"
+  ]
+}
