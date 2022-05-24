@@ -56,7 +56,6 @@ const AllInstructorsView = (props) => {
             <Button variant="primary">Add New Instructor</Button>{' '}
           </Link>
       </Navbar>
-      <div  className = "instructor-container">
       {props.allInstructors.map((instructor) => {
         let name = instructor.firstname + " " + instructor.lastname;
         return (
@@ -73,7 +72,6 @@ const AllInstructorsView = (props) => {
         );
       })}
       <br/>
-      </div>
     </div>
   );
 };

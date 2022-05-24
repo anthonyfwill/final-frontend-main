@@ -38,11 +38,7 @@ const AllCoursesView = (props) => {
   
   return (
     <div>
-      {courses.map((course) => {
-        let title = course.title;
-        return (
-          <div key={course.id}>
-          <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="/final-frontend-main">
             <img
               alt=""
@@ -58,6 +54,10 @@ const AllCoursesView = (props) => {
               <Button variant="primary">Add New Course</Button>{' '}
             </Link>
           </Navbar>
+      {courses.map((course) => {
+        let title = course.title;
+        return (
+          <div key={course.id}>
           <Link to={`/course/${course.id}`}>
             <h1>{title}</h1>
           </Link>
