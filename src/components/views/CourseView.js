@@ -19,8 +19,8 @@ const CourseView = (props) => {
             className="d-inline-block align-top"
           />{' '}
         </Navbar.Brand>
-        <Navbar.Brand href="/instructors">All Instructors</Navbar.Brand>                                                                                                        
-        <Navbar.Brand href="/courses">All Courses</Navbar.Brand>
+        <Navbar.Brand href="/final-frontend-main/instructors">All Instructors</Navbar.Brand>                                                                                                        
+        <Navbar.Brand href="/final-frontend-main/courses">All Courses</Navbar.Brand>
         <Link to={`/newinstructor`}>
           <Button variant="primary">Add New Instructor</Button>{' '}
         </Link>
@@ -28,7 +28,7 @@ const CourseView = (props) => {
       <h1>{course.title}</h1>
       {course.instructor ? 
         <div >
-          <Link to={`/instructor/${course.instructor.id}`}>
+          <Link to={`/final-frontend-main/instructor/${course.instructor.id}`}>
             <h3><img src= {course.instructor.imageUrl} width="100" height="100"/> {course.instructor.firstname + " " + course.instructor.lastname}</h3> 
           </Link>
           <h4>Schedule: {course.timeslot} <br/> Location: {course.location}</h4>

@@ -23,14 +23,14 @@ const AllInstructorsView = (props) => {
               className="d-inline-block align-top"
             />{' '}
           </Navbar.Brand>
-          <Navbar.Brand href="/instructors">All Instructors</Navbar.Brand>                                                                                                        
-          <Navbar.Brand href="/courses">All Courses</Navbar.Brand>
+          <Navbar.Brand href="/final-frontend-main/instructors">All Instructors</Navbar.Brand>                                                                                                        
+          <Navbar.Brand href="/final-frontend-main/courses">All Courses</Navbar.Brand>
           <Link to={`/newinstructor`}>
             <Button variant="primary">Add New Instructor</Button>{' '}
           </Link>
       </Navbar>
       There are no instructors.
-        <br/><Link to={`/newinstructor`}>
+        <br/><Link to={`/final-frontend-main/newinstructor`}>
             <Button variant="primary">Add New Instructor</Button>{' '}
           </Link>
       </div>
@@ -50,9 +50,9 @@ const AllInstructorsView = (props) => {
               className="d-inline-block align-top"
             />{' '}
           </Navbar.Brand>
-          <Navbar.Brand href="/instructors">All Instructors</Navbar.Brand>                                                                                                        
-          <Navbar.Brand href="/courses">All Courses</Navbar.Brand>
-          <Link to={`/newinstructor`}>
+          <Navbar.Brand href="/final-frontend-main/instructors">All Instructors</Navbar.Brand>                                                                                                        
+          <Navbar.Brand href="/final-frontend-main/courses">All Courses</Navbar.Brand>
+          <Link to={`/final-frontend-main/newinstructor`}>
             <Button variant="primary">Add New Instructor</Button>{' '}
           </Link>
       </Navbar>
@@ -60,11 +60,11 @@ const AllInstructorsView = (props) => {
         let name = instructor.firstname + " " + instructor.lastname;
         return (
           <div key={instructor.id}>
-          <Link to={`/instructor/${instructor.id}`}>
+          <Link to={`/final-frontend-main/instructor/${instructor.id}`}>
             <h1>{name}</h1>
           </Link>
           <p>{instructor.department}</p>
-          <Link to={`/instructor/${instructor.id}/edit`}>
+          <Link to={`/final-frontend-main/instructor/${instructor.id}/edit`}>
             <Button variant="primary">Edit Instructor</Button>{' '}
           </Link>
           <Button variant="primary" onClick={() => deleteInstructor(instructor.id)}>Delete</Button>{' '}

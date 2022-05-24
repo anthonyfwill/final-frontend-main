@@ -23,8 +23,8 @@ const InstructorView = (props) => {
             className="d-inline-block align-top"
           />{' '}
         </Navbar.Brand>
-        <Navbar.Brand href="/instructors">All Instructors</Navbar.Brand>                                                                                                        
-        <Navbar.Brand href="/courses">All Courses</Navbar.Brand>
+        <Navbar.Brand href="/final-frontend-main/instructors">All Instructors</Navbar.Brand>                                                                                                        
+        <Navbar.Brand href="/final-frontend-main/courses">All Courses</Navbar.Brand>
         <Link to={`/newinstructor`}>
           <Button variant="primary">Add New Instructor</Button>{' '}
         </Link>
@@ -36,7 +36,7 @@ const InstructorView = (props) => {
         {assignedCourses.map( course => {
           return (
             <div key={course.id}>
-            <Link to={`/course/${course.id}`}>
+            <Link to={`/final-frontend-main/course/${course.id}`}>
               <h4>{course.title}</h4>
             </Link>
             <button onClick={() => editCourse({id:course.id, instructorId: null})}>x</button>
@@ -47,7 +47,7 @@ const InstructorView = (props) => {
         {availableCourses.map( course => {
           return (
             <div key={course.id}>
-            <Link to={`/course/${course.id}`}>
+            <Link to={`/final-frontend-main/course/${course.id}`}>
               <h4>{course.title}</h4>
             </Link>
             <button onClick={() => editCourse({id:course.id, instructorId: instructor.id})}>+</button>

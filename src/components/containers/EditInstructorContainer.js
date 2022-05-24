@@ -58,7 +58,7 @@ class EditInstructorContainer extends Component {
     render() {
       //go to single instructor view of newly created instructor
         if(this.state.redirect) {
-          return (<Redirect to={`/instructor/${this.state.redirectId}`}/>)
+          return (<Redirect to={`/final-frontend-main/instructor/${this.state.redirectId}`}/>)
         }
         return (
           <EditInstructorView 

@@ -22,14 +22,14 @@ const AllCoursesView = (props) => {
             className="d-inline-block align-top"
           />{' '}
         </Navbar.Brand>
-        <Navbar.Brand href="/instructors">All Instructors</Navbar.Brand>                                                                                                        
-        <Navbar.Brand href="/courses">All Courses</Navbar.Brand>
+        <Navbar.Brand href="/final-frontend-main/instructors">All Instructors</Navbar.Brand>                                                                                                        
+        <Navbar.Brand href="/final-frontend-main/courses">All Courses</Navbar.Brand>
         <Link to={`/newcourse`}>
             <Button variant="primary">Add New Course</Button>{' '}
         </Link>
       </Navbar>
       <p>There are no courses.</p>
-      <Link to={`/newcourse`}>
+      <Link to={`/final-frontend-main/newcourse`}>
         <button>Add New Course</button>
       </Link>
     </div>
@@ -48,9 +48,9 @@ const AllCoursesView = (props) => {
               className="d-inline-block align-top"
             />{' '}
           </Navbar.Brand>
-          <Navbar.Brand href="/instructors">All Instructors</Navbar.Brand>                                                                                                        
-          <Navbar.Brand href="/courses">All Courses</Navbar.Brand>
-            <Link to={`/newcourse`}>
+          <Navbar.Brand href="/final-frontend-main/instructors">All Instructors</Navbar.Brand>                                                                                                        
+          <Navbar.Brand href="/final-frontend-main/courses">All Courses</Navbar.Brand>
+            <Link to={`/final-frontend-main/newcourse`}>
               <Button variant="primary">Add New Course</Button>{' '}
             </Link>
           </Navbar>
@@ -58,10 +58,10 @@ const AllCoursesView = (props) => {
         let title = course.title;
         return (
           <div key={course.id}>
-          <Link to={`/course/${course.id}`}>
+          <Link to={`/final-frontend-main/course/${course.id}`}>
             <h1>{title}</h1>
           </Link>
-            <Link to={`/course/${course.id}/edit`}>
+            <Link to={`/final-frontend-main/course/${course.id}/edit`}>
               <Button variant="primary">Edit Course</Button>{' '}
             </Link>
           <Button variant="primary" onClick={() => deleteCourse(course.id)}>Delete</Button>{' '}

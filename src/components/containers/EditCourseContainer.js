@@ -38,7 +38,7 @@ class EditCourseContainer extends Component {
         };
         
         let newCourse = await this.props.editCourse(course);
-        console.log(newCourse, "newcourse")
+      
         this.setState({
           title: this.state.title,
           timeslot: this.state.timeslot,
@@ -57,7 +57,7 @@ class EditCourseContainer extends Component {
     render() {
       //go to single course view of newly created course
         if(this.state.redirect) {
-          return (<Redirect to={`/course/${this.state.redirectId}`}/>)
+          return (<Redirect to={`/final-frontend-main/course/${this.state.redirectId}`}/>)
         }
         return (
           <EditCourseView 
