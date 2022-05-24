@@ -27,8 +27,11 @@ const CourseView = (props) => {
       </Navbar>  
       <h1>{course.title}</h1>
       {course.instructor ? 
-        <div>
-          <h3><img src= {course.instructor.imageUrl} width="100" height="100"/> {course.instructor.firstname + " " + course.instructor.lastname}</h3> 
+        <div >
+          <Link to={`/instructor/${course.instructor.id}`}>
+            <h3><img src= {course.instructor.imageUrl} width="100" height="100"/> {course.instructor.firstname + " " + course.instructor.lastname}</h3> 
+          </Link>
+          <h4>Schedule: {course.timeslot} <br/> Location: {course.location}</h4>
         </div> : <h3>staff</h3>}
     </div>
   );
