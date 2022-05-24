@@ -14,7 +14,7 @@ const AllInstructorsView = (props) => {
     return (
       <div>
       <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/final-frontend-main">
             <img
               alt=""
               src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Hunter_College_logo.svg/1200px-Hunter_College_logo.svg.png"
@@ -41,7 +41,7 @@ const AllInstructorsView = (props) => {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/final-frontend-main">
             <img
               alt=""
               src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Hunter_College_logo.svg/1200px-Hunter_College_logo.svg.png"
