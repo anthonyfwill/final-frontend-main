@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" component={HomePageContainer} />
+        <Route exact path="/final-frontend-main" component={HomePageContainer} />
         <Route exact path="/instructors" component={AllInstructorsContainer} />
         <Route exact path="/newinstructor" component={NewInstructorContainer} />
         <Route exact path="/instructor/:id" component={InstructorContainer} />
