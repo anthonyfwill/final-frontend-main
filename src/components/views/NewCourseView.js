@@ -23,8 +23,8 @@ const NewCourseView = (props) => {
               className="d-inline-block align-top"
             />{' '}
           </Navbar.Brand>
-          <Navbar.Brand href="/instructors">All Instructors</Navbar.Brand>                                                                                                        
-          <Navbar.Brand href="/courses">All Courses</Navbar.Brand>
+          <Navbar.Brand href="/final-frontend-main/instructors">All Instructors</Navbar.Brand>                                                                                                        
+          <Navbar.Brand href="/final-frontend-main/courses">All Courses</Navbar.Brand>
             <Link to={`/newcourse`}>
               <Button variant="primary">Add New Course</Button>{' '}
             </Link>
